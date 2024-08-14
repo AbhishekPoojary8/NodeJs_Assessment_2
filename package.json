@@ -1,0 +1,21 @@
+{
+  "name": "nodejs_assessment_2",
+  "version": "1.0.0",
+  "description": "Node Js Assessment 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js",
+    "restart": "nodemon restart"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "moment-timezone": "^0.5.45",
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4",
+    "os-utils": "^0.0.14"
+  }
+}
