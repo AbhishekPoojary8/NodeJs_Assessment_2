@@ -35,3 +35,11 @@ body:
   "time": "10:00"  
   
 }
+
+**Task 1**
+
+Constantly monitor cpu performance if it execed's 70 percent automatically re-starts the application.
+
+**Task 2**
+
+Takes the the date and time for a message and upload the same to the database.
