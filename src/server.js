@@ -6,6 +6,7 @@ const moment = require('moment-timezone');
 const mongoose = require('mongoose');
 const connectToDatabase = require('../src/db/connection');
 const { Message } = require('./db/model/message.model'); // Adjust path if needed
+const dotenv = require('dotenv');
 
 const app = express();
 app.use(bodyParser.json());
