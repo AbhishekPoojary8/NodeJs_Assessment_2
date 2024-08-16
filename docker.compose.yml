@@ -10,8 +10,8 @@ services:
     depends_on:
       - mongo
     volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
+      - .:/usr/src/
+      - /usr/node_modules
     command: npm start
 
   mongo:
