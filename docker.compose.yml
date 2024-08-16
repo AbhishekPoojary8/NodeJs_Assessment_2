@@ -1,19 +1,25 @@
-version: "3.8"
-
+version: "3"
 services:
   app:
     build: .
     ports:
       - "3000:3000"
     environment:
-      PORT: 3000
-      MONGODB_URI: mongodb://mongo:27017/messages
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongo:27017/messages
     depends_on:
       - mongo
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm start
 
   mongo:
-    image: mongo:6
+    image: mongo:latest
     ports:
       - "27017:27017"
     volumes:
-      - ./data/db:/data/db
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
